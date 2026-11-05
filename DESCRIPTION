@@ -1,0 +1,27 @@
+Package: alphaearthnemeton
+Title: AlphaEarth Foundations Satellite Embeddings for 'nemeton'
+Version: 2026.11.1
+Authors@R:
+    person("Pascal", "Obstétar", , "pascal.obstetar@gmail.com", role = c("aut", "cre"))
+Description: Fetches the annual AlphaEarth Foundations Satellite Embedding
+    (Google DeepMind, 64 dimensions, 10 m) over an area of interest from the
+    public Cloud Optimized GeoTIFFs, de-quantizes them, reprojects them and
+    caches them as content-addressed COGs ready for the 'nemeton' package
+    (indicator N5, spec 064). Pure R: no Python, no Earth Engine account.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1.0)
+Imports:
+    cli,
+    sf (>= 1.0-0),
+    terra (>= 1.7-0),
+    tools
+Suggests:
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3
+URL: https://github.com/pobsteta/alphaearthnemeton
+BugReports: https://github.com/pobsteta/alphaearthnemeton/issues
+RoxygenNote: 7.3.1
